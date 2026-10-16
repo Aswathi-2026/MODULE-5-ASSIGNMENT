@@ -1,0 +1,355 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "8ece3550-12f6-4fcd-9725-9b37d76bf98a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Requirement already satisfied: numpy in .\\anaconda3\\Lib\\site-packages (2.4.6)\n",
+      "Note: you may need to restart the kernel to use updated packages.\n"
+     ]
+    }
+   ],
+   "source": [
+    "pip install numpy"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "0b4411f9-e8e9-4b1c-8a97-628ddae643d8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "bd3e6be0-0dfb-424f-b95a-e40f484d58e5",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[22.5 25.3 20.8 23.4 26.1 24.8 21.9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "temperatures_w1=np.array([22.5,25.3,20.8,23.4,26.1,24.8,21.9])\n",
+    "print(temperatures_w1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "92111a25-f10f-4839-ae94-6772aca38688",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "shape: (7,)\n",
+      "data type: float64\n",
+      "number of elements: 7\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "temperatures_w1=np.array([22.5,25.3,20.8,23.4,26.1,24.8,21.9])\n",
+    "print(\"shape:\",temperatures_w1.shape)\n",
+    "print(\"data type:\",temperatures_w1.dtype)\n",
+    "print(\"number of elements:\",\n",
+    "temperatures_w1.size)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "8cffa811-17b9-4c00-bd57-f52fca002e6f",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'temepratures_w1' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mNameError\u001b[39m                                 Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[3]\u001b[39m\u001b[32m, line 5\u001b[39m\n\u001b[32m      1\u001b[39m \u001b[38;5;28;01mimport\u001b[39;00m numpy \u001b[38;5;28;01mas\u001b[39;00m np\n\u001b[32m      2\u001b[39m temperatues_w1=np.array([\u001b[32m22.5\u001b[39m,\u001b[32m25.3\u001b[39m,\u001b[32m20.8\u001b[39m,\u001b[32m23.4\u001b[39m,\u001b[32m26.1\u001b[39m,\u001b[32m24.8\u001b[39m,\u001b[32m21.9\u001b[39m])\n\u001b[32m      3\u001b[39m temperatures_f=(temperatures_w1*\u001b[32m9\u001b[39m/\u001b[32m5\u001b[39m)+\u001b[32m32\u001b[39m\n\u001b[32m      4\u001b[39m max_temp=np.max(temperatures_w1)\n\u001b[32m----> \u001b[39m\u001b[32m5\u001b[39m min_temp=np.min(temepratures_w1)\n\u001b[32m      6\u001b[39m mean_temp=np.mean(temperatures_w1)\n\u001b[32m      7\u001b[39m print(\"temperatures in celsius:\",\n\u001b[32m      8\u001b[39m temperatures_w1)\n",
+      "\u001b[31mNameError\u001b[39m: name 'temepratures_w1' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "temperatues_w1=np.array([22.5,25.3,20.8,23.4,26.1,24.8,21.9])\n",
+    "temperatures_f=(temperatures_w1*9/5)+32\n",
+    "max_temp=np.max(temperatures_w1)\n",
+    "min_temp=np.min(temepratures_w1)\n",
+    "mean_temp=np.mean(temperatures_w1)\n",
+    "print(\"temperatures in celsius:\",\n",
+    "temperatures_w1)\n",
+    "print(\"temperatures in Fahrenheit:\",\n",
+    "temperatures_f)\n",
+    "print(\"maximum temperature:\",max_temp,\n",
+    "\"degree celsious\")\n",
+    "print(\"minimum temperature:\",min_temp,\n",
+    "\"degree celsious\")\n",
+    "print(\"mean temperature:\",\n",
+    "round(mean_temp,2),\"degree celsious\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "43bf870b-a3a5-4ca7-9db7-83a9172a1a8d",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'temepratures_w1' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mNameError\u001b[39m                                 Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[4]\u001b[39m\u001b[32m, line 5\u001b[39m\n\u001b[32m      1\u001b[39m \u001b[38;5;28;01mimport\u001b[39;00m numpy \u001b[38;5;28;01mas\u001b[39;00m np\n\u001b[32m      2\u001b[39m temperatues_w1=np.array([\u001b[32m22.5\u001b[39m,\u001b[32m25.3\u001b[39m,\u001b[32m20.8\u001b[39m,\u001b[32m23.4\u001b[39m,\u001b[32m26.1\u001b[39m,\u001b[32m24.8\u001b[39m,\u001b[32m21.9\u001b[39m])\n\u001b[32m      3\u001b[39m temperatures_f=(temperatures_w1*\u001b[32m9\u001b[39m/\u001b[32m5\u001b[39m)+\u001b[32m32\u001b[39m\n\u001b[32m      4\u001b[39m max_temp=np.max(temperatures_w1)\n\u001b[32m----> \u001b[39m\u001b[32m5\u001b[39m min_temp=np.min(temepratures_w1)\n\u001b[32m      6\u001b[39m mean_temp=np.mean(temperatures_w1)\n\u001b[32m      7\u001b[39m print(\"temperatures in celsius:\",\n\u001b[32m      8\u001b[39m temperatures_w1)\n",
+      "\u001b[31mNameError\u001b[39m: name 'temepratures_w1' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "temperatues_w1=np.array([22.5,25.3,20.8,23.4,26.1,24.8,21.9])\n",
+    "temperatures_f=(temperatures_w1*9/5)+32\n",
+    "max_temp=np.max(temperatures_w1)\n",
+    "min_temp=np.min(temepratures_w1)\n",
+    "mean_temp=np.mean(temperatures_w1)\n",
+    "print(\"temperatures in celsius:\",\n",
+    "temperatures_w1)\n",
+    "print(\"temperatures in Fahrenheit:\",\n",
+    "temperatures_f)\n",
+    "print(\"maximum temperature:\",max_temp,\n",
+    "\"degree celsious\")\n",
+    "print(\"minimum temperature:\",min_temp,\n",
+    "\"degree celsious\")\n",
+    "print(\"mean temperature:\",\n",
+    "round(mean_temp,2),\"degree celsious\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "1505b2ad-9b2e-4320-b861-c4c89a8aff41",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "first three days: [22.5 25.3 20.8]\n",
+      "weekend temperatures: [24.8 21.9]\n",
+      "middle three days: [20.8 23.4 26.1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "temperatues_w1=np.array([22.5,25.3,20.8,23.4,26.1,24.8,21.9])\n",
+    "print(\"first three days:\",\n",
+    "temperatures_w1[:3])\n",
+    "print(\"weekend temperatures:\",\n",
+    "temperatures_w1[-2:])\n",
+    "print(\"middle three days:\",\n",
+    "temperatures_w1[2:5])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "a5917602-4484-4462-a833-16fe4bda275d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[22.5 25.3 20.8 23.4 26.1 24.8 21.9]\n",
+      " [19.2 22.5 21.3 24.  23.5 22.8 20.1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "temperatures=np.array([\n",
+    "[22.5,25.3,20.8,23.4,26.1,24.8,21.9],\n",
+    "[19.2,22.5,21.3,24.0,23.5,22.8,20.1]\n",
+    "])\n",
+    "print(temperatures)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "bbbb2573-dbc5-4a00-93f3-95f04a10d0a6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "shape: (2, 7)\n",
+      "data type: float64\n",
+      "total number of elements: 14\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"shape:\",temperatures.shape)\n",
+    "print(\"data type:\",temperatures.dtype)\n",
+    "print(\"total number of elements:\",\n",
+    "temperatures.size)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "fdbe82fa-c955-4909-94d2-b15d69faf4e0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "week 1 temperatures: [22.5 25.3 20.8 23.4 26.1 24.8 21.9]\n",
+      "week 2 temperatures: [19.2 22.5 21.3 24.  23.5 22.8 20.1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"week 1 temperatures:\",\n",
+    "temperatures[0])\n",
+    "print(\"week 2 temperatures:\",\n",
+    "temperatures[1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "7e99fbf5-32bf-4920-9ca3-62a9feefb091",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "weekend temperatures for both weeks:\n",
+      "[[24.8 21.9]\n",
+      " [22.8 20.1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"weekend temperatures for both weeks:\")\n",
+    "print(temperatures[:,-2:])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "d80e84f8-f83c-4581-9abc-b23a480b77ab",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "AttributeError",
+     "evalue": "module 'pandas' has no attribute 'series'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mAttributeError\u001b[39m                            Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[12]\u001b[39m\u001b[32m, line 2\u001b[39m\n\u001b[32m      1\u001b[39m \u001b[38;5;28;01mimport\u001b[39;00m pandas \u001b[38;5;28;01mas\u001b[39;00m pd\n\u001b[32m----> \u001b[39m\u001b[32m2\u001b[39m marks=pd.series(\n\u001b[32m      3\u001b[39m  [\u001b[32m95\u001b[39m,\u001b[32m92\u001b[39m,\u001b[32m89\u001b[39m,\u001b[32m85\u001b[39m,\u001b[32m80\u001b[39m],\n\u001b[32m      4\u001b[39m index=['Rank1','Rank2','Rank3','Rank4',\n\u001b[32m      5\u001b[39m \u001b[33m'Rank5'\u001b[39m,]\n",
+      "\u001b[31mAttributeError\u001b[39m: module 'pandas' has no attribute 'series'"
+     ]
+    }
+   ],
+   "source": [
+    "import pandas as pd\n",
+    "marks=pd.series(\n",
+    " [95,92,89,85,80],\n",
+    "index=['Rank1','Rank2','Rank3','Rank4',\n",
+    "'Rank5',]\n",
+    ")\n",
+    "print(marks)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "6ab3b4ae-c9e5-45dc-b487-3c8e5ce1f9fd",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'marks' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mNameError\u001b[39m                                 Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[13]\u001b[39m\u001b[32m, line 2\u001b[39m\n\u001b[32m      1\u001b[39m print(\"mark of 1st rank student:\",\n\u001b[32m----> \u001b[39m\u001b[32m2\u001b[39m marks.iloc[\u001b[32m0\u001b[39m])\n",
+      "\u001b[31mNameError\u001b[39m: name 'marks' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"mark of 1st rank student:\",\n",
+    "marks.iloc[0])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "99ff4381-8b8e-496f-926a-261bfac47563",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "translactions=\n",
+    "translactions.drop(columns=['discount'])\n",
+    "print(transactions)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.14.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
